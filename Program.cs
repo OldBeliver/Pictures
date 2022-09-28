@@ -6,16 +6,16 @@ namespace Pictures
     {
         static void Main(string[] args)
         {
-            int countInLine = 3;
+            int picturesInLine = 3;
             int allPictures = 52;
 
             int completedLines;
-            int rest;
+            int restPictures;
 
-            completedLines = allPictures / countInLine;
-            rest = allPictures % countInLine;
+            completedLines = allPictures / picturesInLine;
+            restPictures = allPictures % picturesInLine;
 
-            Console.WriteLine($"если {allPictures} картинки разложить по {countInLine} в ряд, то получится {completedLines} рядов и один неполный ряд с {rest} картинками");
+            Console.WriteLine($"если {allPictures} картинки разложить по {picturesInLine} в ряд, то получится {completedLines} рядов и один неполный ряд с {restPictures} картинками");
         }
     }
 }
